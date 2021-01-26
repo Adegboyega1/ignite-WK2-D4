@@ -135,7 +135,8 @@ function transform(num)
   }
   
   let bio ={name: "John", surname: "Doe"}
-  let arrayofobject = [,,], i =0
+  let arrayofobject = []
+  let i =0
   //fxn arrayFi
   function arrayFi(obj)
   {
@@ -155,7 +156,8 @@ function transform(num)
   function objectFi(ary) {
       while (y<arrayofobject.length)
       {
-          obj[y] = arrayofobject[y+1]
+          obj.ar = Object.assign({},arrayofobject[y])
+            y++
       }
       return obj
   }
